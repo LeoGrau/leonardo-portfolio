@@ -1,0 +1,5 @@
+li.skill::before {
+  content: "▸";
+  color: #A5B4FC;
+  margin-right: 10px;
+}

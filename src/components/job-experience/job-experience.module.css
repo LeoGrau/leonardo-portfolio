@@ -1,0 +1,20 @@
+:global(.pf-timeline .p-timeline-event-opposite) {
+  width: 0 !important;
+  flex: 0;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+:global(.pf-panel-menu .p-panelmenu-header-content),
+:global(.pf-panel-menu .p-menuitem-content),
+:global(.pf-panel-menu .p-panelmenu-content) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(24 24 27 / var(--tw-bg-opacity, 1));
+  border: none;
+  padding: 10px 20px;
+}
+
+.test {
+  background-color: purple;
+}

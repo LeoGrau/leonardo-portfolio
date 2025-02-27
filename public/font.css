@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "Aptos";
+  src: url("/fonts/aptos.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aptos";
+  src: url("/fonts/aptos-semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Averta";
+  src: url("/fonts/averta-bold.woff2") format("woff2");;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Averta";
+  src: url("/fonts/averta-extrabold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "porter-sans";
+  src: url("/fonts/porter-sans.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+.aptos {
+  font-family: "Aptos";
+}
+
+.averta {
+  font-family: "Averta";
+}
+
+.porter-sans {
+  font-family: "porter-sans";
+}
