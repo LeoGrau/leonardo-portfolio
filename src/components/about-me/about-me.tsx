@@ -20,9 +20,12 @@ const toolsNFrameworks = [
 function AboutMe() {
   return (
     <>
-      <div id="about-me" className="flex min-h-screen h-fit py-[100px] justify-center items-center bg-zinc-800 text-gray-300">
+      <div
+        id="about-me"
+        className="flex min-h-screen h-fit py-[100px] justify-center items-center bg-zinc-800 text-gray-300 w-full px-[20px] md:px-[60px]"
+      >
         <div className="max-w-[900px] grid grid-cols-1 lg:grid-cols-2 justify-center gap-[100px] items-center w-full">
-          <div className="w-full lg:w-[410px] flex flex-col px-[60px] lg:px-0">
+          <div className="w-full lg:w-[410px] flex flex-col">
             <h1 className="text-3xl mb-3 font-averta-bold text-indigo-300 flex items-center gap-2">
               <i className="isax-bold-arrow-right-1 hover:translate-x-[5px] transition-transform duration-300 cursor-pointer"></i>
               <span>About Me</span>
@@ -52,18 +55,18 @@ function AboutMe() {
               </li>
             </ul>
           </div>
-          <div>
-            <div className="relative flex justify-center">
+          <div className="flex justify-center cursor-pointer">
+            <div className="relative inline-block w-fit">
+              <div className="absolute top-2 left-2 w-full h-full rounded-xl border-2 border-indigo-800 bg-indigo-600 bg-opacity-10"></div>
               <img
-                className="w-[320px] rounded-xl absolute z-40"
+                className="max-w-[320px] w-full rounded-xl relative z-10"
                 src={imageUrl}
                 alt=""
               />
-              <div className="cursor-pointer w-[320px] h-[320.86px] border rounded-xl border-indigo-800 bg-indigo-600 bg-opacity-15 translate-x-5 -translate-y-5 transition-transform hover:translate-x-7 hover:-translate-y-7"></div>
             </div>
           </div>
           <div className="flex justify-center w-full row-start-4 lg:row-start-auto">
-            <div className="border-indigo-400 border h-full rounded-xl p-5 flex flex-col max-w-[400px] w-full">
+            <div className="border-indigo-400 border h-full rounded-xl p-5 flex flex-col w-full max-w-[300px] md:max-w-[380px]">
               <h3 className="text-indigo-300 mb-2">Programming Languages</h3>
               <ul className="grid grid-cols-2">
                 {planguages.map((pl) => (
@@ -80,7 +83,7 @@ function AboutMe() {
               </ul>
             </div>
           </div>
-          <div className="w-full lg:w-[410px] flex flex-col px-[60px] lg:px-0">
+          <div className="w-full lg:w-[410px] flex flex-col">
             <h1 className="text-3xl mb-3 font-averta-bold text-indigo-300 flex items-center gap-2">
               <i className="isax-bold-arrow-right-1 hover:translate-x-[5px] transition-transform duration-300 cursor-pointer"></i>
               <span>Technical Information</span>

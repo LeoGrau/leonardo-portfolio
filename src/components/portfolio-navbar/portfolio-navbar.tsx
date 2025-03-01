@@ -29,12 +29,12 @@ function PortfolioNavbar() {
 
   useEffect(() => {
     const handleClickOutside = (mouseEvent: MouseEvent) => {
-      // console.log("event", mouseEvent.target);
-      // console.log("ref", menuRef.current);
+      console.log("event", mouseEvent.target);
+      console.log("ref", buttonRef.current);
       if (
         menuRef.current &&
         !menuRef.current!.contains(mouseEvent.target as Node) && 
-        buttonRef.current == mouseEvent.target
+        !buttonRef.current?.contains(mouseEvent.target as Node)
       ) {
         console.log("Get in");
         setShowMenu(false);

@@ -18,6 +18,7 @@
 
 html {
   scroll-behavior: smooth;
+  min-width: 344px;
 }
 
 html, body, #root {

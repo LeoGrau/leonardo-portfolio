@@ -1,11 +1,11 @@
 type Tech = {
-  name: string
-}
+  name: string;
+};
 
 type Link = {
-  icon: string
-  url: string
-}
+  icon: string;
+  url: string;
+};
 
 type ProjectCard = {
   projectName: string;
@@ -20,37 +20,45 @@ interface ProjectCardProps {
 }
 
 function openProject(url: string) {
-  window.open(url, "_blank")
+  window.open(url, "_blank");
 }
 
-const MinimalProjectCard = ({projectCard}: ProjectCardProps) => {
+const MinimalProjectCard = ({ projectCard }: ProjectCardProps) => {
   return (
-    <div id="projects" className="relative">
-        <div className="flex flex-col justify-between border border-opacity-55 border-indigo-500 rounded-lg p-5 bg-indigo-900 bg-opacity-45 items-left z-50 absolute text-white w-[450px] h-full text-base">
-          <span className="averta text-indigo-400">{projectCard.projectName}</span>
-          <span>
-          {projectCard.description}
-          </span>
-          <ul className="flex flex-wrap gap-2 text-indigo-300">
-            {projectCard.techs.map((l, index) => (
-              <li key={index}>
-                <span>{l.name}</span>
-              </li>
-            ))}
-          </ul>
-          <ul className="flex">
-            {projectCard.links.map((l, index) => (
-              <li key={index}>
-                <i onClick={() => openProject(l.url)} className={`${l.icon} text-2xl hover:text-indigo-500 transition-colors duration-300 cursor-pointer`}></i>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className="w-[450px] relative top-0 z-10 h-[270px] overflow-hidden rounded-xl">
-          <div className="bg-opacity-90 absolute w-full h-full bg-zinc-800"></div>
-          <img className="rounded-xl" src={projectCard.image} alt="" />
-        </div>
+    <div className="h-full relative border border-opacity-55 border-indigo-500 rounded-lg p-5 bg-indigo-900 bg-opacity-45 items-left z-50 text-white text-base overflow-hidden max-w-[500px]">
+      <div className="flex flex-col gap-3 justify-between z-50 relative">
+        <span className="averta text-indigo-400">
+          {projectCard.projectName}
+        </span>
+        <span>{projectCard.description}</span>
+        <ul className="flex flex-wrap gap-x-2 text-indigo-300">
+          {projectCard.techs.map((l, index) => (
+            <li key={index}>
+              <span>{l.name}</span>
+            </li>
+          ))}
+        </ul>
+        <ul className="flex">
+          {projectCard.links.map((l, index) => (
+            <li key={index}>
+              <i
+                onClick={() => openProject(l.url)}
+                className={`${l.icon} text-2xl hover:text-indigo-500 transition-colors duration-300 cursor-pointer`}
+              ></i>
+            </li>
+          ))}
+        </ul>
       </div>
+      <div className="absolute inset-0 z-10">
+        <div className="bg-opacity-90 absolute h-full w-full bg-zinc-800"></div>
+        <div className="bg-opacity-30 absolute h-full w-full bg-indigo-800"></div>
+        <img
+          className="h-full w-full object-cover rounded-xl"
+          src={projectCard.image}
+          alt=""
+        />
+      </div>
+    </div>
   );
 };
 

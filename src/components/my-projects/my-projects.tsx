@@ -54,7 +54,7 @@ class MyProjects extends Component {
 
   render(): ReactNode {
     return (
-      <div id="projects" className="bg-zinc-900 p-5 min-h-screen h-fit flex items-center justify-center flex-col px-[50px]">
+      <div id="projects" className="bg-zinc-900 p-5 min-h-screen h-fit flex items-center justify-center flex-col px-[20px] md:px-[60px]">
         <h1 className="averta font-bold text-indigo-300 text-4xl text-center mb-2">
           My Projects
         </h1>
