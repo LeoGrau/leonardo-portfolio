@@ -48,7 +48,7 @@ function PortfolioNavbar() {
 
   return (
     <>
-      <div className="fixed h-[70px] w-full bg-indigo-950 px-5 flex justify-between items-center text-gray-300 z-50">
+      <div className="fixed h-[70px] w-full bg-indigo-950 px-5 flex justify-between items-center text-gray-300 z-40">
         <div className="flex items-center gap-2">
           <div className="rounded-full overflow-hidden h-[40px] w-[40px]">
             <img src={imageUrl} alt="" />

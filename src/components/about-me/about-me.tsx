@@ -22,7 +22,7 @@ function AboutMe() {
     <>
       <div
         id="about-me"
-        className="flex min-h-screen h-fit py-[100px] justify-center items-center bg-zinc-800 text-gray-300 w-full px-[20px] md:px-[60px]"
+        className="flex h-fit py-[110px] justify-center items-center bg-zinc-800 text-gray-300 w-full px-[20px] md:px-[60px]"
       >
         <div className="max-w-[900px] grid grid-cols-1 lg:grid-cols-2 justify-center gap-[100px] items-center w-full">
           <div className="w-full lg:w-[410px] flex flex-col">

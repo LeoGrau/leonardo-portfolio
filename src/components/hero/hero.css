@@ -12,3 +12,10 @@
 .scroll-left {
   animation: scroll 20s linear infinite;
 }
+
+
+@media (min-height: 390px) and (max-height: 650px) {
+  .mdh\:absolute {
+    position: absolute;
+  }
+}

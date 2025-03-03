@@ -289,8 +289,9 @@ const JobExperience = () => {
   return (
     <div
       id="experience"
-      className="flex flex-col lg:flex-row justify-center w-full px-[20px] md:px-[60px] py-[40px] bg-zinc-800 gap-[20px]"
+      className="flex flex-col lg:flex-row justify-center w-full px-[20px] md:px-[60px] py-[110px] bg-zinc-800 gap-[20px] min-h-fit"
     >
+      
       <div className="bg-zinc-800 flex flex-col justify-start items-center gap-10 w-full">
         <h1 className="averta text-3xl text-indigo-300 text-center">
           Job Experience
