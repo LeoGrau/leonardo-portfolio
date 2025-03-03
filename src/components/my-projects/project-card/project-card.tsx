@@ -62,7 +62,6 @@ const MinimalProjectCard = ({ projectCard }: ProjectCardProps) => {
   );
 };
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 // const ExtendProjectCard = () => {
 //   return (
 //     <>
